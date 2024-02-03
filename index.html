@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laboratorio 3</title>
+    <style>
+      .imagenLogo {
+        display: block;
+        margin: auto;
+      }
+      p {
+        font-weight: bold;
+        text-align: center;
+      }
+    #usuarios{
+        width: 100%;
+      }
+    
+
+    </style>
+  </head>
+    <body>
+      <p>Portada</p>
+      <img
+        src="./Imagenes/Imagen2.png"
+        alt="Logo Universidad"
+        width="50%"
+        class="imagenLogo"
+      />
+      <br />
+
+      <p>Nombre: Alejandro Méndez Leiva</p>
+      <p>Carrera: Informática</p>
+      <p>Nombre del Curso: Programación para Internet</p>
+      <p>Numero de Laboratorio: 3</p>
+      <br />
+        <table border="2" align="center" cellspacing="0" cellpadding="0" width="25%">
+          <tr>
+            <th style="color: #e2e2e4; font-size: x-large" bgcolor=" #284179">
+              Información Personal
+            </th>
+          </tr>
+          <tr>
+            <th style="color: #284179; background: #e2e2e4">
+              <h3>Incluir</h3>
+              <form id="form1" method="">
+                <table align="center" border="1">
+                  <tr>
+                    <td align="left">Seleccione el usuario:</td>
+                    <td align="left"><select id="usuarios" size="multiple">
+                      <option value="" selected disabled>Seleccione</option>
+                      <option value="Empleado">Empleado</option>
+                      <option value="Administrador">Administrador</option>
+                      <option value="Usuario">Usuario</option>
+                      </select></td>
+                  </tr>
+                  <tr>
+                    <td align="left">Codigo:</td>
+                    <td align="left"><input type="number" id="codigo" value="" required></td>
+                  </tr>
+                  <tr>
+                    <td align="left">Nombre:</td>
+                    <td align="left"><input type="text" id="nombre" value="" required></td>
+                  </tr>
+                  <tr>
+                    <td align="left">Cedula:</td>
+                    <td align="left"><input type="number" id="cedula" value="" maxlength="9" required></td>
+                  </tr>
+                  <tr>
+                    <td align="left">Telefono:</td>
+                    <td align="left"><input type="text" id="telefono" value="" maxlength="9"></td>
+                  </tr>
+                  <tr>
+                    <td align="left"><marquee behavior="" direction="down">Direccion:</marquee></td>
+                    <td align="left"><textarea name="direccion" cols="" rows="" value=""></textarea></td>
+                  </tr>
+                  <tr>
+                    <td align="left"> <a href="https://twitter.com/home">Profesion:</a> </td>
+                    <td align="left"><input type="text" id="profesion" value=""></td>
+                  </tr>
+                  <tr>
+                    <td align="left"> Edad:</td>
+                    <td align="left"><input type="number" id="edad" value=""></td>
+                  </tr>
+                  <tr>
+                    <td align="left">Imagen:</td>
+                    <td><img src="./Imagenes/star.png" alt="estrella" width="70px"></td>
+                  </tr>
+                </table>
+                <br>
+                <input type="submit" id="aceptar" value="Aceptar" style="color: #284179; font-weight: bolder" >
+                <input type="submit" id="cancelar" value="Cancelar" style="color: #284179; font-weight: bolder">
+                <br>
+                <p></p>
+              </form>
+            </th>
+          </tr>
+        </table>
+    </body>
+</html>
